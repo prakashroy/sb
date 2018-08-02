@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Solution Buggy - View Projects</title>
+    <link href="sb/sb/images/favicon.png" rel="shortcut icon" />
+    <!-- Bootstrap core CSS -->
+    <link href="sb/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="sb/css/scrolling-nav.css" rel="stylesheet">
+    <link href="sb/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="sb/css/aniamte.css" rel="stylesheet" type="text/css" />
+    <link href="sb/css/slick.css" rel="stylesheet" type="text/css" />
+    <link href="sb/css/slickTheme.css" rel="stylesheet" type="text/css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74995442-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74995442-1');
+
+  var trackerName = ga.getAll()[0].get('name');
+  console.log(trackerName);
+</script>
+	<style>
+	.table {
+    border-radius: 5px;
+    width: 100%;
+    margin: 0px auto;
+    float: none;
+}
+th {
+color:white;
+}
+.blur{
+	color: transparent;
+	text-shadow: 0 0 7px #aaa;
+}
+ .da a {
+        font-size: 13px;
+		margin-left:90px;
+		width:100%;
+ }
+ @media only screen and (max-width: 480px) and (min-width: 320px) {
+   
+    .da a {
+        font-size: 13px;
+		width:210%;
+		float:left;
+		margin-left:0px;
+	}
+ }
+ </style>
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top border-top-red" id="mainNav">
+        <div class="container  padding-none">
+            <a class="navbar-brand js-scroll-trigger margin-none padding-none" href="#page-top"><img src="sb/images/logo.png"></a>
+            <div class="mobile-nav">
+                <div class="top-menu top-menu-mob  float-right hidden-xs">
+
+                    <ul class="navbar-nav ml-auto margin-bottom-10 colorDarkGrey text-uppercase float-right display-inline text-right register icon-bar">
+
+                        <li class="login"><i class="fa fa-user"></i><a href="https://www.solutionbuggy.com/buggy/login?">Login</a></li>
+                        <li class="sign-up  border-none"><i class="fa fa-user-plus"></i><a href="https://www.solutionbuggy.com/buggy/register?">Register</a></li>
+
+                    </ul>
+                </div>
+                <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            </div>
+
+            <div class="nav-main" id="navbarResponsive">
+                <div class="top-menu width-100 float-right">
+
+                    <ul class="navbar-nav ml-auto margin-bottom-10 colorDarkGrey text-uppercase float-right display-inline text-right register icon-bar">
+                        <li class="search">
+                            <div class="input-group add-on">
+                                <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="login xs-none"><i class="fa fa-user"></i><a href="https://www.solutionbuggy.com/buggy/login?">Login</a></li>
+                        <li class="sign-up xs-none"><i class="fa fa-user-plus"></i><a href="https://www.solutionbuggy.com/buggy/register?">Register</a></li>
+                        <li class="call border-none"><i class="fa fa-phone"></i><a href="https://www.solutionbuggy.com/contactus.php">call</a></li>
+                        <li class="post-prblm"><a href="https://www.solutionbuggy.com/buggy/register?" class="ornageCol">post a problem</a></li>
+                    </ul>
+                </div>
+                <!--top-menu-->
+                <ul class="navbar-nav main-list-nav ml-auto colorDarkGrey display-inline float-right text-uppercase width-100 text-right">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#Benifits">Benefits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#hw">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#Insights">industry Insights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="https://www.solutionbuggy.com/pricing.php">Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="https://www.solutionbuggy.com/ourteam.php">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger border-none" href="#testimonial">testimonial</a>
+                    </li>
+                    <li class="nav-item finSup findBor">
+                        <a class="nav-link js-scroll-trigger border-none" href="https://www.solutionbuggy.com/buggy/suppliers">Find suppliers</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>           
+                   
+    <section id="project" class="bg-white wow fadeInDown mt-5">
+        <div class="container">
+			<h2 class="text-center text-uppercase colorDarkGrey mt-5"><span class="float-left width-100"></span>Latest Projects</h2>
+				  <table class="table table-bordered text-centered table-hover mt-4">
+					<thead>
+					  <tr>
+						<th bgcolor="#09559e">Project Title</th>
+						<th bgcolor="#09559e">Industry</th>
+						<th bgcolor="#09559e">Category</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>Require licensing and documentation expert for new plant setup</td>
+						<td>Mechanical or Industrial Engineering</td>
+						<td>ISO9001 / TS 16949 QMS</td>
+					  </tr>
+					  <tr>
+						<td>Require Product development, Design and Packaging experts our new product launch</td>
+						<td>Manufacturing</td>
+						<td>Product Development</td>
+					  </tr>
+					  <tr>
+						<td>Require consultants to setup a new plant in Organic Pesticide &amp; Fertilizers unit</td>
+						<td>Manufacturing</td>
+						<td>Green field and Brown filed projects</td>
+					  </tr>
+					  <tr>
+						<td>Require a Consultant to setup a new manufacturing plant in Bangalore</td>
+						<td>Manufacturing</td>
+						<td>Green field and Brown filed projects</td>
+					  </tr>
+					  <tr>
+						<td>Require food consultant to manufacture confectionery along with preservatives</td>
+						<td>Chemical</td>
+						<td>Manufacturing</td>
+					  </tr>
+					  <tr>
+						<td>Cashew friction dust manufacturing plant setup</td>
+						<td>Food Industry</td>
+						<td>Manufacturing</td>
+					  </tr>
+					  <tr>
+						<td>Required Lean Manufacturing and Factory Layout consultant</td>
+						<td>Mechanical or Industrial Engineering</td>
+						<td>Lean Manufacturing</td>
+					  </tr>
+					  <tr>
+						<td>Require manufacturing consultant to guide me in setting up of new industry</td>
+						<td>Manufacturing</td>
+						<td>Manufacturing</td>
+					  </tr>
+					  <tr>
+						<td>Require a consultant for PET bottles recycling and manufacturing unit setup</td>
+						<td>Plastics</td>
+						<td>Manufacturing</td>
+					  </tr>
+					  <tr>
+						<td>Experts experienced in setting up new manufacturing industry required</td>
+						<td>Manufacturing</td>
+						<td>Manufacturing</td>
+					  </tr>
+					  <tr>
+						<td>Require food consultant to manufacture confectionery along with preservatives</td>
+						<td>Chemical</td>
+						<td>Manufacturing</td>
+					  </tr>
+					  <tr class="blur">
+						<td>Cashew friction dust manufacturing plant setup</td>
+						<td>Food Industry</td>
+						<td>Manufacturing</td>
+					  </tr>
+					  <tr class="blur">
+						<td>Required Lean Manufacturing and Factory Layout consultant</td>
+						<td>Mechanical or Industrial Engineering</td>
+						<td>Lean Manufacturing</td>
+					  </tr class="blur">
+					  <tr class="blur">
+						<td>Require manufacturing consultant to guide me in setting up of new industry</td>
+						<td>Manufacturing</td>
+						<td>Manufacturing</td>
+					  </tr>
+					  <tr class="blur">
+						<td>Require a consultant for PET bottles recycling and manufacturing unit setup</td>
+						<td>Plastics</td>
+						<td>Manufacturing</td>
+					  </tr>
+					  <tr class="blur">
+						<td>Experts experienced in setting up new manufacturing industry required</td>
+						<td>Manufacturing</td>
+						<td>Manufacturing</td>
+					  </tr>
+					</tbody>
+				  </table>
+				 <span class="da text-uppercase ex fil-back mt-4" data-toggle="modal" data-target="#expert"><a href="javascript:void(0);" class="btn">Register to Apply</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark float-left width-100">
+        <div class="container padding-none">
+            <div class="social-connect">
+                <span>connect us</span>
+                <ul class="link-center">
+                    <li>
+                        <a href="https://www.facebook.com/solutionbuggy/" target="_blank"><img src="sb/images/fbIcon.png" /></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/SolutionBuggy" target="_blank"><img src="sb/images/tIcon.png" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/solution-buggy" target="_blank"><img src="sb/images/lnIcon.png" /></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/u/0/101907656488923015213" target="_blank"><img src="sb/images/gIcon.png" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCoKoETJRzky2OjTFfsPro8Q" target="_blank"><img src="sb/images/uIcon.png" /></a>
+                    </li>
+                    <li class="border-radius-none">
+                        <a href="https://www.solutionbuggy.com/contactus.php" target="_blank"><img src="sb/images/WIcon.png" class="border-radius-none" /></a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.solutionbuggy.com/contactus.php" target="_blank"><img src="sb/images/lIcon.png" /></a>
+                    </li>
+
+                </ul>
+            </div>
+            <!--social-connect-->
+            <div class="box">
+                <h5 class="text-uppercase">company info</h5>
+                <ul class="text-uppercase ft-list">
+                    <li><a href="https://www.solutionbuggy.com/about.php">About us</a></li>
+                    <li><a href="https://www.solutionbuggy.com/whysolutionbuggy.php">why SolutionBuggy</a></li>
+                    <li><a href="http://www.solutionbuggy.blogspot.in/">Blog</a></li>
+                    <li><a href="https://www.solutionbuggy.com/contactus.php">Career</a></li>
+                    <li><a href="https://www.solutionbuggy.com/needforsolutionbuggy.php">Need for SolutionBuggy </a></li>
+                    <li><a href="https://www.solutionbuggy.com/members.php">Members Insight</a></li>
+                    <li><a href="https://www.solutionbuggy.com/faq.php">Faq</a></li>
+
+                </ul>
+            </div>
+            <!--box-->
+            <div class="box">
+                <h5 class="text-uppercase">industries</h5>
+                <ul class="text-uppercase ft-list">
+                    <li><a href="#1">automotive & automotive</a></li>
+                    <li><a href="#1">electrical & electronics</a></li>
+                    <li><a href="#1">aerospace & defence </a></li>
+                    <li><a href="#1">defence & solar</a></li>
+                    <li><a href="#1">chemical & pharma</a></li>
+                    <li><a href="#1">food & agriculture</a></li>
+                    <li><a href="#1">machine tools & metals</a></li>
+                    <li><a href="#1">textile & jewellery</a></li>
+                    <span class="float-right text-right width-100 fontSize12"><a href="#1" class="ornageCol">More..</a></span>
+
+                </ul>
+            </div>
+            <!--box-->
+            <div class="box">
+                <h5 class="text-uppercase">browse expert</h5>
+                <ul class="text-uppercase ft-list">
+                    <li><a href="#1">engineering & technology</a></li>
+                    <li><a href="#1">New Plants & Funding</a></li>
+                    <li><a href="#1">business development & sales</a></li>
+                    <li><a href="#1">productivity & process improvement</a></li>
+                    <li><a href="#1">Product development & Training</a></li>
+                    <li><a href="#1">quality & maintenance</a></li>
+                    <li><a href="#1">operations & Hr</a></li>
+                    <li><a href="#1">IT & software</a></li>
+
+                </ul>
+            </div>
+            <!--box-->
+            <!-- <div class="box">
+                <h5 class="text-uppercase">news & Events</h5>
+                <ul class="text-uppercase ft-list">
+                    <li><a href="#1">Ipsum is simply dummy</a></li>
+                    <li><a href="#1">Ipsum is simply dummy</a></li>
+                    <li><a href="#1">Ipsum is simply dummy</a></li>
+                    <li><a href="#1">Ipsum is simply dummy</a></li>
+                    <li><a href="#1">Ipsum is simply dummy</a></li>
+                    <li><a href="#1">Ipsum is simply dummy</a></li>
+                    <li><a href="#1">Ipsum is simply dummy</a></li>
+                    <li><a href="#1">Ipsum is simply dummy</a></li>
+
+                </ul>
+            </div> -->
+            <!--box-->
+            <div class="box blog">
+                <h5 class="text-uppercase">blogs</h5>
+                <ul class="text-uppercase ft-list">
+                    <li><a href="http://solutionbuggy.blogspot.com/2016/10/lean-manufacturing-effectiveness-by.html" target="_blank">lean manufacturing effectiveness by reduction of waste</a></li>
+                    <li><a href="http://solutionbuggy.blogspot.com/2016/09/6-challenges-in-front-of-manufacturing.html" target="_blank">6 challenges infront of manufacturing sector</a></li>
+                    <li><a href="http://solutionbuggy.blogspot.com/2016/09/importance-of-smes-in-manufacturing.html" target="_blank">importance of SME's in manufactuing Industries</a></li>
+                    <li><a href="http://solutionbuggy.blogspot.com/2016/10/tips-to-succeed-as-engineering.html" target="_blank">Tips to succeed as an engineering consultant</a></li>
+                    <li><a href="http://solutionbuggy.blogspot.com/2016/12/importance-of-total-quality-management.html" target="_blank">importance of total quality management in manufacturing </a></li>
+                    <li><a href="http://solutionbuggy.blogspot.com/2017/08/process-improvement-need-of-hour-for.html" target="_blank">Process improving-need of the hour for manufacturing industries</a></li>
+
+
+                </ul>
+            </div>
+            <!--box-->
+
+
+        </div>
+        <!-- /.container -->
+
+        <div class="sub-footer" id="page-botom">
+            <span class="text-uppercase white rights">all rights Reserved @ 2018</span>
+            <span class="address white"><address class="white"><h5>SolBuggy Connect Pvt Ltd</h5> Regd. Office: #1176, 11th Cross,22nd B main Road, Sector 1, H.S.R. Layout, Bangalore-560102 <br/>
+            <span>Reach us - 90-3555-3216, 90-3555-3206, 98-8601-1966</span>
+            </address>
+            </span>
+            <span class="float-right social-link">
+              
+            <ul class="ss-links">
+                <li>
+                    <a href="https://www.solutionbuggy.com/terms.php">Terms & conditions</a></li>
+                   <li class="border-none"> <a href="https://www.solutionbuggy.com/privacypolicy.php">Privacy Policy</a></li>
+
+            </ul>
+            </span>
+        </div>
+        <!--sub-footer-->
+    </footer>
+    <!--<div class="arrow-fixd">
+        <a href="#page-top" class="js-scroll-trigger"><img src="sb/images/upArrow.png" width="30" /></a>
+        <a href="#page-botom" class="js-scroll-trigger"><img src="sb/images/downArrow.png" width="30" /></a>
+    </div> -->
+    <!--arrow-->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="sb/vendor/jquery/jquery.min.js"></script>
+    <script src="sb/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="sb/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="sb/js/scrolling-nav.js"></script>
+
+    <script src="sb/js/slick.js" type="text/javascript"></script>
+    <script src="sb/js/animate.js" type="text/javascript"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="industires" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-uppercase" id="exampleModalLongTitle">Register as an Industry</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline text-uppercase" action="https://www.solutionbuggy.com/buggy/register" method="post">
+                    <div class="form-group text-uppercase">
+                        <label for="Fname">Name / Company:</label>
+                        <input type="text" class="form-control" id="Fname" name="firstname" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email" name="email" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" pattern="^\d{10}$" name="phone" autocomplete="off" required class="form-control" id="phone">
+                    </div>
+					<div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" autocomplete="off" name="password" required id="password">
+                    </div>
+					<input type="hidden" name="customer_type" value="SS">
+				<input type="hidden" name="project" value="">
+
+                
+            </div>
+            <div class="modal-footer">
+            
+                <button type="submit" class="btn btn-primary text-uppercase">Register</button>
+            </div>
+			</form>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="expert" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="text-align:center; background-color: #0f2f50; color: white"?
+       <h5 class="modal-title" id="exampleModalLongTitle" style="margin-left:30%; color:red">Register as an EXPERT</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                 <form class="form-inline text-uppercase" action="https://www.solutionbuggy.com/buggy/register" method="post">
+                    <div class="form-group text-uppercase">
+                        <label for="Fname">Name / Company:</label>
+                        <input type="text" class="form-control" id="Fname" name="firstname" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email" name="email" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" pattern="^\d{10}$" name="phone" autocomplete="off" required class="form-control" id="phone">
+                    </div>
+					<div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" autocomplete="off" name="password" required id="password">
+                    </div>
+					<input type="hidden" name="customer_type" value="SP">
+				<input type="hidden" name="project" value="">
+
+                
+            </div>
+            <div class="modal-footer">
+               
+                <button type="submit" class="btn btn-primary text-uppercase">Register</button>
+            </div>
+			</form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="suppliers" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-uppercase" id="exampleModalLongTitle">Register as a Suppliers</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+            </div>
+            <div class="modal-body">
+                 <form class="form-inline text-uppercase" action="https://www.solutionbuggy.com/buggy/register" method="post">
+                    <div class="form-group text-uppercase">
+                        <label for="Fname">Name / Company:</label>
+                        <input type="text" class="form-control" id="Fname" name="firstname" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email" name="email" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" pattern="^\d{10}$" name="phone" autocomplete="off" required class="form-control" id="phone">
+                    </div>
+					<div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" autocomplete="off" name="password" required id="password">
+                    </div>
+					<input type="hidden" name="customer_type" value="S">
+				<input type="hidden" name="project" value="">
+
+               
+            </div>
+            <div class="modal-footer">
+                
+                <button type="submit" class="btn btn-primary text-uppercase">Register</button>
+            </div>
+			 </form>
+        </div>
+    </div>
+</div>
